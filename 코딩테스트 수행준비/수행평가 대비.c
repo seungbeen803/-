@@ -1,18 +1,23 @@
-#include <stdio.h>
-#include <string.h>
+#include<stdio.h>
+#include<string.h>
 
 int main(void) {
+
 	char str[30] = "I want go home";
 
 	// 문자열 길이
 	int length = strlen(str);
-	printf("문자열의 길이 : %d\n", length);
+	printf("문자열의 길이 : %d\n");
 
 	// 문자열 복사
 	char copy_str[30];
 	strcpy(copy_str, str);
 	printf("%s \n", copy_str);
+
 	// 문자열 덧붙이기
+	strcat(copy_str, " right now!");
+	printf("%s \n", copy_str);
+
 
 	// 문자열 비교하기
 	if (strcmp("BMW", "benz") == 0)
